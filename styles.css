@@ -1,0 +1,87 @@
+body {
+	margin: 0;
+	background-color: #000;
+}
+
+.container {
+	color: #fff;
+}
+
+.game-wrap {
+    display: flex;
+	flex: 1;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.game-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.game-info>*{
+	margin: 0 10px;
+}
+
+#game-container {
+	display: flex;
+	flex-direction: column;
+	background-image: url('./images/ice.png');
+	margin: 0 auto;
+}
+
+#game-container > .row {
+	display: flex;
+	flex-direction: row;
+    align-self: center;
+}
+
+#game-container > .row > .cell {
+	width: 32px;
+	height: 32px;
+}
+
+.player {
+	background-image: url('./images/player-walk.png');
+}
+
+.player.moving {
+	background-image: url('./images/player-slide.png');
+}
+
+.player.left {
+	background-position-y: -32px;
+}
+
+.player.right {
+	background-position-y: -64px;
+}
+
+.player.up {
+	background-position-y: -96px;
+}
+
+.goal {
+	background-image: url('./images/fish.png');
+    background-position: -192px -34px;
+}
+
+.wall {
+	background-image: url('./images/wall.png');
+    background-size: cover;
+}
+
+.death {
+	background-image: url('./images/spike.png');
+	background-size: contain;
+}
+
+#game-levels {
+	padding: 20px;
+}
+
+#game-levels>button {
+	margin: 10px;
+}
